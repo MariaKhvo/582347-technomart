@@ -9,8 +9,10 @@
       <div class="header-top">
         <a class="logo" href="index.html">Техномарт</a>
         <form action="#" method="GET">
-          <input type="search" name="search" class="search" placeholder="Поиск:">
-          <label for="search" class="search-icon"></label>
+          <label for="search" class="visually-hidden">
+            <img src="img/icon-search.svg" name="search-icon" alt="Поиск" title="Поиск">
+          </label>
+          <input type="text" name="search" class="search" value="Поиск" id="search">
         </form>        
         <a href="#" class="bookmark">Закладки: 0</a>
         <a href="#" class="cart">Корзина: 10</a>
@@ -56,7 +58,50 @@
       </div>
       <section class="filter">
         <h3>Фильтр:</h3>
-        <!--Формы-->
+        <form action="https://echo.htmlacademy.ru" class="filter" method="POST">
+          <p class="filter-item">Цена:
+            <input type="range" name="radio">
+            <input type="text" name="price-min"  placeholder="0">
+            <span>-</span>
+            <input type="text" name="price-max" placeholder="30000">
+          </p class="filter-item">Производители:
+            <ul class="brend-list">
+              <li>
+                <input type="checkbox" name="brend-name" id="brend-bosch" checked>
+                <label for="brend-bosch">Bosch</label>
+              </li>
+              <li>
+                <input type="checkbox" name="brend-name" id="brend-interskol">
+                <label for="brend-interskol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="brend-name" id="brend-makita" checked>
+                <label for="brend-makita">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="brend-name" id="brend-dewalt">
+                <label for="brend-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="brend-name" id="brend-Hitachi">
+                <label for="brend-hitachi">Hitachi</label>
+              </li>
+           </ul>
+          </p>
+          <p class="filter-item">Питание:
+            <ul class="power-list">
+              <li>
+                <input type="radio" name="power-look" id="battery" checked>
+                <label for="battery">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="power-look" id="network">
+                <label for="network">Сетевые</label>
+              </li>
+            </ul>
+          </p>
+          <button type="submit">Показать</button>
+        </form>
       </section>
       <div class="sort">
         <ul class="sort-list">

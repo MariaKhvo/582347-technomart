@@ -8,11 +8,13 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-         <a class="logo" href="index.html">Техномарт</a>
-         <form action="#" method="GET">
-           <input type="search" name="search" class="search" value="Поиск">
-           <label for="search" class="search-icon">
-          </form>        
+        <a class="logo" href="index.html">Техномарт</a>
+        <form action="#" method="GET">
+          <label for="search" class="visually-hidden">
+            <img src="img/icon-search.svg" name="search-icon" alt="Поиск" title="Поиск">
+          </label>
+            <input type="text" name="search" class="search" value="Поиск" id="search">
+        </form>        
           <a href="#" class="bookmark">Закладки: 0</a>
           <a href="#" class="cart">Корзина: 0</a>
           <a href="#" class="order-btn">Оформить заказ</a>
@@ -22,15 +24,15 @@
           <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         </div>
         <div class="contact">
-          <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</div>
+          <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
           <div class="adress">г.Санкт-Петербург. ул. Б. Конюшенная, д. 19/8</div>
         </div>
         <div class="user-container">
-          <a href="#" class="login-btn">Войти</a><!--Иконка-->
-          <a href="#" class="registration-btn">Регистраци</a><!--Иконка-->
+          <a href="#" class="login-btn">Войти</a>
+          <a href="#" class="registration-btn">Регистраци</a>
         </div>
       </div>
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Основное меню">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -71,11 +73,23 @@
           <div class="slide">
             <h2>Перфораторы</h2>
             <span>Настоящие мужские игрушки</span>
+            <button type="button" class="btn btn-arrow-back">
+              <img src="img/icon-arrow-left.svg" class="icon-arrow-left">
+            </button>
+            <button type="button" class="btn btn-arrow-next">
+              <img src="img/icon-arrow-right.svg" class="icon-arrow-right">
+            </button>
             <a href="catalog.html" class="slide-btn">Открыть каталог</a>
-          </div>
+            </div>
           <div class="slide">
             <h2>Дрели</h2>
             <span>Соседям на радость!</span>
+            <button type="button" class="btn btn-arrow-back">
+              <img src="img/icon-arrow-left.svg" class="icon-arrow-left">
+            </button>
+            <button type="button" class="btn btn-arrow-next">
+              <img src="img/icon-arrow-right.svg" class="icon-arrow-right">
+            </button>
             <a href="catalog.html" class="slide-btn">Открыть каталог</a>
           </div>
           <div class="slider-control">
@@ -211,7 +225,7 @@
           <h2 class="service-title">Сервисы</h2>
           <p>Хороший Интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
         </div>
-        <!--Формы-->
+        <!--Кнопки доставка гарантии-->
         <div class="delivery-service">
           <h2 class="delivery-title">Доставка</h2>
           <p>мы с удовольсвтием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш таж</p>
@@ -247,6 +261,13 @@
             <img src="img/map small.png" alt="Офис на карте">
           </a>
           <a href="#" class="btn">Заблудились? Напишите нам!</a>
+        </div>
+        <div class="modal-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <p>
+              <img src="img/map-pop-up.png" width="" height="" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </p>
+            <span class="modal-close">x</span>
         </div>
       </section>
     </main>
