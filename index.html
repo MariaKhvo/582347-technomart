@@ -8,12 +8,10 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <a class="logo" href="index.html">Техномарт</a>
+        <h1>Техномарт</h1>
         <form action="#" method="GET">
-          <label for="search" class="visually-hidden">
-            <img src="img/icon-search.svg" name="search-icon" alt="Поиск" title="Поиск">
-          </label>
-            <input type="text" name="search" class="search" value="Поиск" id="search">
+          <label for="search" class="search-icon"></label>
+          <input type="search" name="search" class="search" placeholder="Поиск:" id="search">
         </form>        
           <a href="#" class="bookmark">Закладки: 0</a>
           <a href="#" class="cart">Корзина: 0</a>
@@ -21,11 +19,11 @@
       </div>
       <div class="header-center">
         <div class="headline">
-          <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
         </div>
         <div class="contact">
           <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
-          <div class="adress">г.Санкт-Петербург. ул. Б. Конюшенная, д. 19/8</div>
+          <span class="adress">г.Санкт-Петербург. ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="user-container">
           <a href="#" class="login-btn">Войти</a>
@@ -68,48 +66,38 @@
           <a href="#" class="features-btn">Для стройки</a>
         </div>
         <div class="features-item slide">
-          <input type="radio" name="point" id="slide1" checked>
-          <input type="radio" name="point" id="slide2">
-          <div class="slide">
-            <h2>Перфораторы</h2>
-            <span>Настоящие мужские игрушки</span>
-            <button type="button" class="btn btn-arrow-back">
-              <img src="img/icon-arrow-left.svg" class="icon-arrow-left">
-            </button>
-            <button type="button" class="btn btn-arrow-next">
-              <img src="img/icon-arrow-right.svg" class="icon-arrow-right">
-            </button>
-            <a href="catalog.html" class="slide-btn">Открыть каталог</a>
-            </div>
-          <div class="slide">
-            <h2>Дрели</h2>
-            <span>Соседям на радость!</span>
-            <button type="button" class="btn btn-arrow-back">
-              <img src="img/icon-arrow-left.svg" class="icon-arrow-left">
-            </button>
-            <button type="button" class="btn btn-arrow-next">
-              <img src="img/icon-arrow-right.svg" class="icon-arrow-right">
-            </button>
-            <a href="catalog.html" class="slide-btn">Открыть каталог</a>
-          </div>
-          <div class="slider-control">
+          <div class="slide-direction">
+            <input type="radio" name="point" value="radio-left" id="slide1" checked>
+            <input type="radio" name="point" value="radio-right" id="slide2">
+            <button type="button" class="btn btn-arrow-back"></button>
+            <button type="button" class="btn btn-arrow-next"></button>
             <label for="slide1"></label>
             <label for="slide2"></label>
           </div>
-          <div class="features-item discount">
-            <h2>Скидка 50%</h2>
-            <div class="features-img">
-              <img src="img/icon-cart.png" alt="Скидка 50%" width="59" height="72">
-            </div>
-            <a href="#" class="features-btn">На 350 товаров</a>
+          <div class="slide">
+            <h2>Перфораторы</h2>
+            <span>Настоящие мужские игрушки</span>
+            <a href="catalog.html" class="slide-btn">Открыть каталог</a>
           </div>
-          <div class="features-item delivery">
-            <h2>Доставка</h2>
-            <div class="features-img">
-              <img src="img/icon-car.png" alt="Доставка" width="78" height="63">
-            </div>
-            <a href="#" class="features-btn">Бесплатно</a>
+          <div class="slide">
+            <h2>Дрели</h2>
+            <span>Соседям на радость!</span>
+            <a href="catalog.html" class="slide-btn">Открыть каталог</a>
           </div>
+        </div>
+        <div class="features-item discount">
+          <h2>Скидка 50%</h2>
+          <div class="features-img">
+            <img src="img/icon-cart.png" alt="Скидка 50%" width="59" height="72">
+          </div>
+          <a href="#" class="features-btn">На 350 товаров</a>
+        </div>
+        <div class="features-item delivery">
+          <h2>Доставка</h2>
+          <div class="features-img">
+            <img src="img/icon-car.png" alt="Доставка" width="78" height="63">
+          </div>
+          <a href="#" class="features-btn">Бесплатно</a>
         </div>
       </section>
       <section class="popular product">
@@ -227,10 +215,10 @@
         </div>
         <!--Кнопки доставка гарантии-->
         <div class="delivery-service">
-          <h2 class="delivery-title">Доставка</h2>
+          <h2>Доставка</h2>
           <p>мы с удовольсвтием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш таж</p>
         </div>
-        <div class="garanty-servoce">
+        <div class="garanty-service">
           <h2>Гарантия</h2>
           <p>Если купленный у нас товар поломается или заискрит, а так же вслучае пожара, спровоцированого его возгоранием,
             вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
@@ -267,7 +255,7 @@
             <p>
               <img src="img/map-pop-up.png" width="" height="" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
             </p>
-            <span class="modal-close">x</span>
+            <button type="button" class="modal-close">x</button>
         </div>
       </section>
     </main>

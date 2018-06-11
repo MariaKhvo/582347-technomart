@@ -7,12 +7,10 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <a class="logo" href="index.html">Техномарт</a>
+        <h1><a class="logo" href="index.html">Техномарт</a></h1>
         <form action="#" method="GET">
-          <label for="search" class="visually-hidden">
-            <img src="img/icon-search.svg" name="search-icon" alt="Поиск" title="Поиск">
-          </label>
-          <input type="text" name="search" class="search" value="Поиск" id="search">
+          <label for="search" class="search-icon"></label>
+          <input type="search" name="search" class="search" placeholder="Поиск:" id="search">
         </form>        
         <a href="#" class="bookmark">Закладки: 0</a>
         <a href="#" class="cart">Корзина: 10</a>
@@ -24,7 +22,7 @@
         </div>
         <div class="contact">
           <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
-          <div class="adress">г.Cанкт-Петербург. ул. Б. Конюшенная, д. 19/8</div>
+          <span class="adress">г.Cанкт-Петербург. ул. Б. Конюшенная, д. 19/8</span>
         </div>
         <div class="user-container">
           <a href="#" class="loged">Равшан Джамшутовоч</a><!--Иконки до и после-->
@@ -34,7 +32,7 @@
           </div>
         </div>
       </div>
-      <nav class="main-navigation">
+      <nav class="main-navigation" aria-label="Основное меню">
         <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -57,14 +55,17 @@
         <h1>Перфораторы</h1>
       </div>
       <section class="filter">
-        <h3>Фильтр:</h3>
         <form action="https://echo.htmlacademy.ru" class="filter" method="POST">
-          <p class="filter-item">Цена:
+          <h3>Фильтр:</h3>
+          <div class="filter-item">
+            <p>Цена:</p>
             <input type="range" name="radio">
-            <input type="text" name="price-min"  placeholder="0">
+            <input type="text" name="price-min"  value="0">
             <span>-</span>
-            <input type="text" name="price-max" placeholder="30000">
-          </p class="filter-item">Производители:
+            <input type="text" name="price-max" value="30000">
+          </div>
+          <div class="filter-item">
+            <p>Производители:</p>
             <ul class="brend-list">
               <li>
                 <input type="checkbox" name="brend-name" id="brend-bosch" checked>
@@ -87,19 +88,20 @@
                 <label for="brend-hitachi">Hitachi</label>
               </li>
            </ul>
-          </p>
-          <p class="filter-item">Питание:
+          </div>
+          <div class="filter-item">
+            <p>Питание:</p>
             <ul class="power-list">
               <li>
-                <input type="radio" name="power-look" id="battery" checked>
+                <input type="radio" name="power-look" value="battery" id="battery" checked>
                 <label for="battery">Аккумуляторные</label>
               </li>
               <li>
-                <input type="radio" name="power-look" id="network">
-                <label for="network">Сетевые</label>
+                <input type="radio" name="power-look" value="line supply" id="supply">
+                <label for="supply">Сетевые</label>
               </li>
             </ul>
-          </p>
+          <div>
           <button type="submit">Показать</button>
         </form>
       </section>
