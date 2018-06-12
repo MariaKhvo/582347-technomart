@@ -59,7 +59,6 @@
           <h3>Фильтр:</h3>
           <div class="filter-item">
             <p>Цена:</p>
-            <input type="range" name="radio">
             <input type="text" name="price-min"  value="0">
             <span>-</span>
             <input type="text" name="price-max" value="30000">
@@ -68,19 +67,19 @@
             <p>Производители:</p>
             <ul class="brend-list">
               <li>
-                <input type="checkbox" name="brend-name" id="brend-bosch" checked>
+                <input type="checkbox" name="brend-name" value="Bosch"id="brend-bosch" checked>
                 <label for="brend-bosch">Bosch</label>
               </li>
               <li>
-                <input type="checkbox" name="brend-name" id="brend-interskol">
+                <input type="checkbox" name="brend-name" value="Interskol" id="brend-interskol">
                 <label for="brend-interskol">Интерскол</label>
               </li>
               <li>
-                <input type="checkbox" name="brend-name" id="brend-makita" checked>
+                <input type="checkbox" name="brend-name" value="Makita" id="brend-makita" checked>
                 <label for="brend-makita">Makita</label>
               </li>
               <li>
-                <input type="checkbox" name="brend-name" id="brend-dewalt">
+                <input type="checkbox" name="brend-name" value="Dewalt" id="brend-dewalt">
                 <label for="brend-dewalt">Dewalt</label>
               </li>
               <li>
@@ -97,7 +96,7 @@
                 <label for="battery">Аккумуляторные</label>
               </li>
               <li>
-                <input type="radio" name="power-look" value="line supply" id="supply">
+                <input type="radio" name="power-look" value="supply" id="supply">
                 <label for="supply">Сетевые</label>
               </li>
             </ul>
