@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Каталог интернет-магазина Техномарт </title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="header-top">
-        <h1><a class="logo" href="index.html">Техномарт</a></h1>
+        <a class="logo" href="index.html">Техномарт</a>
         <form action="#" method="GET">
           <label for="search" class="search-icon"></label>
           <input type="search" name="search" class="search-field" placeholder="Поиск:" id="search">
@@ -59,40 +58,40 @@
       </div>
       <section class="filter">
         <form action="https://echo.htmlacademy.ru" class="filter" method="POST">
-          <h3>Фильтр:</h3>
+          <h3 class="filter-title">Фильтр:</h3>
           <div class="filter-item">
-            <span>Цена:</span>
-            <input type="text" name="price-min"  value="0">
+            <h3>Цена:</h3>
+            <input type="text" class="price" name="price-min"  value="0">
             <span>-</span>
-            <input type="text" name="price-max" value="30000">
+            <input type="text" class="price" name="price-max" value="30000">
           </div>
           <div class="filter-item">
-            <span>Производители:</span>
-            <ul class="brend-list">
+            <h3>Производители:</h3>
+            <ul class="brand-list">
               <li>
-                <input type="checkbox" name="brend-name" value="Bosch"id="brend-bosch" checked>
-                <label for="brend-bosch">Bosch</label>
+                <input type="checkbox" name="brand-name" value="Bosch"id="brand-bosch" checked>
+                <label for="brand-bosch">Bosch</label>
               </li>
               <li>
-                <input type="checkbox" name="brend-name" value="Interskol" id="brend-interskol">
-                <label for="brend-interskol">Интерскол</label>
+                <input type="checkbox" name="brand-name" value="Interskol" id="brand-interskol">
+                <label for="brand-interskol">Интерскол</label>
               </li>
               <li>
-                <input type="checkbox" name="brend-name" value="Makita" id="brend-makita" checked>
-                <label for="brend-makita">Makita</label>
+                <input type="checkbox" name="brand-name" value="Makita" id="brand-makita" checked>
+                <label for="brand-makita">Makita</label>
               </li>
               <li>
-                <input type="checkbox" name="brend-name" value="Dewalt" id="brend-dewalt">
-                <label for="brend-dewalt">Dewalt</label>
+                <input type="checkbox" name="brand-name" value="Dewalt" id="brand-dewalt">
+                <label for="brand-dewalt">Dewalt</label>
               </li>
               <li>
-                <input type="checkbox" name="brend-name" id="brend-Hitachi">
-                <label for="brend-hitachi">Hitachi</label>
+                <input type="checkbox" name="brand-name" id="brand-Hitachi">
+                <label for="brand-hitachi">Hitachi</label>
               </li>
            </ul>
           </div>
           <div class="filter-item">
-            <span>Питание:</span>
+            <h3>Питание:</h3>
             <ul class="power-list">
               <li>
                 <input type="radio" name="power-look" value="battery" id="battery" checked>
@@ -130,7 +129,7 @@
           </div>
           <span class="product-categoty">Перфоратор BOSCH</span>
           <span class="product-model">BFG 3000</span>
-          <span class="old price">22500 Р.</span>
+          <span class="old-price">22500 Р.</span>
           <a href="#cart" class="price-btn">15500 Р.</a>
         </article>
         <article class="product-item">                 
@@ -139,7 +138,7 @@
           </div>
           <span class="product-categoty">Перфоратор BOSCH</span>
           <span class="product-model">BFG 6000</span>
-          <span class="old price">30500 Р.</span>
+          <span class="old-price">30500 Р.</span>
           <a href="#cart" class="price-btn">25500 Р.</a>
         </article>
         <article class="product-item">                        
@@ -157,7 +156,7 @@
           </div>
           <span class="product-categoty">Перфоратор BOSCH</span>
           <span class="product-model">BFG 3000</span>
-          <span class="old price">22500 Р.</span>
+          <span class="old-price">22500 Р.</span>
           <a href="#cart" class="price-btn">15500 Р.</a>
         </article>
         <article class="product-item">                                 
@@ -166,7 +165,7 @@
           </div>
           <span class="product-categoty">Перфоратор BOSCH</span>
           <span class="product-model">BFG 6000</span>
-          <span class="old price">30500 Р.</span>
+          <span class="old-price">30500 Р.</span>
           <a href="#cart" class="price-btn">25500 Р.</a>
         </article>
         <article class="product-item">
@@ -184,7 +183,7 @@
           </div>
           <span class="product-categoty">Перфоратор BOSCH</span>
           <span class="product-model">BFG 3000</span>
-          <span class="old price">22500 Р.</span>
+          <span class="old-price">22500 Р.</span>
           <a href="#cart" class="price-btn">15500 Р.</a>
         </article>                        
           <div class="product-img">
@@ -192,7 +191,7 @@
           </div>
           <span class="product-categoty">Перфоратор BOSCH</span>
           <span class="product-model">BFG 6000</span>
-          <span class="old price">30500 Р.</span>
+          <span class="old-price">30500 Р.</span>
           <a href="#cart" class="price-btn">25500 Р.</a>
         </article>
         <article class="product-item">                       
@@ -212,8 +211,8 @@
         </ul>
       </section>
       <section class="product-info">
-        <h3>Пара слова о перфораторах</h3>
-        <p>Перфорратор - универсальный строительный Инструмент. 
+        <h3>Пара слов о перфораторах</h3>
+        <p>Перфоратор - универсальный строительный Инструмент. 
           Предназначен для сверления и долбления отверстий в керпиче, 
           бетоне и камне. Существуют электромеханические и пневматические перфораторы. 
           Соверменные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
@@ -223,7 +222,7 @@
     </main>
     <footer class="main-footer">
       <section class="footer-top">
-        <h1><a class="logo" href="index.html">Техномарт</a></h1>
+        <a class="logo" href="index.html">Техномарт</a>
         <div class="footer-adress">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>

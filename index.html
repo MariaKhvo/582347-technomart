@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт Интернет-магазин строительных материалов</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="header-top">
-        <h1>Техномарт</h1>
+        <a class="logo">Техномарт</a>
         <form action="#" method="GET">
           <label for="search" class="search-icon"></label>
           <input type="search" name="search" class="search-field" placeholder="Поиск:" id="search">
@@ -45,7 +44,7 @@
       </nav>
     </header>
     <main class="container">
-      <section class="main features">
+      <section class="main-features">
         <div class="features-item material">
           <h2>Материалы</h2>
           <div class="features-img">
@@ -154,8 +153,8 @@
           <h3>Популярные производители</h3>
           <a href="#" class="button">Все производители</a>
         </div>
-        <div class="brand-list">
-          <ul class="brand-list">
+        <div class="brands-list">
+          <ul class="brands-list">
             <li>
               <a href="#">
                 <img src="img/bosch.jpg" alt="BOSCH" width="126" height="37">
@@ -207,7 +206,7 @@
         <!--Кнопки доставка гарантии-->
         <div class="delivery-service">
           <span>Доставка</span>
-          <p>мы с удовольсвтием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш таж</p>
+          <p>Мы с удовольсвтием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш таж</p>
         </div>
         <div class="garanty-service">
           <span>Гарантия</span>
@@ -252,7 +251,7 @@
     </main>
     <footer class="main-footer">
       <section class="footer-top">
-        <h1><a class="logo" href="index.html">Техномарт</a></h1>
+        <a class="logo" href="index.html">Техномарт</a>
         <div class="footer-adress">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -294,21 +293,23 @@
     </footer>
     <section class="modal modal-message">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <label for="user-name">Ваше имя:</label>
-          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" value="">
-        </div>
-        <div>
-          <label for="user-mail">Ваш e-mail:</label>
-          <input id="user-mail" type="text" name="mail" placeholder="email@example.com" value="">
-        </div>
-        <div>
-          <label for="text-message">Текст письма:</label>
-          <input id="text-message" type="text" name="massege" placeholder="В свободной форме" value="">
-        </div>
-        <button class="button" type="submit">Отправить</button>
-      </form>
+      <fieldset><legend class="visually-hidden">Форма отправки сообщения</legend>
+        <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
+          <div>
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" value="">
+          </div>
+          <div>
+            <label for="user-mail">Ваш e-mail:</label>
+            <input id="user-mail" type="email" name="mail" placeholder="email@example.com" value="">
+          </div>
+          <div>
+            <label for="text-message">Текст письма:</label>
+            <textarea id="text-message" type="text" name="massege" placeholder="В свободной форме" value=""></textarea>
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </fieldset>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
