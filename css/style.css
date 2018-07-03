@@ -1802,8 +1802,20 @@ button:active {
   text-transform: lowercase;
 }
 
-.modal-message {
+.modal {
+  display: none;
+  position: fixed;
   background-color: #ffffff;
+}
+
+.modal-message {
+  width: 620px;
+  box-sizing: border-box;
+  padding: 50px 80px 37px;;
+  bottom: 200px;
+  left: 50%;
+  margin-left: -290px;
+  box-shadow: 0 1px 2px 13px rgba(237, 237, 237, 0.7)
 }
 
 .modal label {
@@ -1830,3 +1842,4 @@ button:active {
 .message-form textarea:hover {
   border-color: #b5b5b5;
 }
+
