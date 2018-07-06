@@ -1415,8 +1415,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-item:hover,
 .pagination-item:focus {
-  border: 1px solid #bdc6ca;
-}
+  border: 1px solid #bdc6ca;}
 
 .pagination-item:active {
   border: 1px solid #ee3643;
