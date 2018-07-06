@@ -187,22 +187,12 @@ input[type="radio"].visually-hidden {
 .search-icon {
   position: absolute;
   display: block;
-  width: 17px;
-  height: 17px;
   top: 10px;
-  margin-left: 17px;
-  background-color: inherit;
+  margin-left: 11px;
+  background-color: transparent;
   border: none;
-  z-index: 5;
+  cursor: pointer;
  } 
-
- .svg-search {
-   position: absolute;
-   top: 10px;
-   margin-left: 17px;
-   z-index: 10;
-   cursor: pointer;
- }
 
 .header-top input::before  {
   content: "";
@@ -267,12 +257,12 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.search-field:hover ~ .svg-search path {
+.search-field:hover ~ .search-icon path {
   fill: #ffffff;
 }
 
-.search-field:active ~ .svg-search path,
-.search-field:focus ~ .svg-search path {
+.search-field:active ~ .search-icon path,
+.search-field:focus ~ .search-icon path {
   fill: #ee3643;
 }
 
@@ -340,7 +330,7 @@ input[type="radio"].visually-hidden {
   width: 270px;
   box-sizing:  border-box;
   margin-bottom: 3px;
-  padding: 10px 20px 9px 41px;
+  padding: 11px 20px 10px 41px;
   border: 3px solid #ffffff;
 }
 
@@ -521,7 +511,7 @@ input[type="radio"].visually-hidden {
   padding-left: 21px;
   padding-right: 24px;
   background-color: #32425c;
-  border-bottom: 5px solid #293449;
+  border-bottom: 4px solid #293449;
 }
 
 .site-navigation a {
@@ -602,7 +592,7 @@ input[type="radio"].visually-hidden {
 .main-features {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 60px;
+  padding-top: 58px;
   margin: auto;
   margin-bottom: 31px;
 }
@@ -649,7 +639,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 300px;
   box-sizing: border-box;
-  padding: 19px 110px 22px 22px;
+  padding: 21px 110px 20px 22px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
@@ -864,6 +854,10 @@ input[type="radio"].visually-hidden {
   padding: 0 24px 0 27px;
 }
 
+.title-brands {
+  padding-left: 24px;
+}
+
 .title-popular h3,
 .title-brands h3 {
   font-size: 30px;
@@ -871,7 +865,11 @@ input[type="radio"].visually-hidden {
   color: #32425c;
   text-transform: uppercase;
   font-weight: normal;
+  margin: 0;
+  padding-bottom: 29px;
+  padding-top: 33px;
 }
+
 
 .button {
   font-size: 14px;
@@ -1171,7 +1169,7 @@ button:active {
   margin-right: 0;
 }
 
-.catalog-list .product-item:nth-child(3n) {
+.catalog-list .product-item:nth-child(3n+1) {
   margin-right: 0;
 }
 
@@ -1251,7 +1249,7 @@ button:active {
   line-height: 20px;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: bold;
-  padding: 26px 30px 14px 30px;
+  padding: 25px 30px 14px 30px;
 }
 
 .product-item .old-price,
@@ -1275,7 +1273,7 @@ button:active {
   display: block;
   position: relative;
   width: 80px;
-  margin: 6px 42px 20px;
+  margin: 5px 42px 20px;
   padding: 10px 34px 10px 27px;
   background: #ee3643;
   border-radius: 3px;
@@ -1439,6 +1437,7 @@ button:active {
 .brand-img {
   display: flex;
   height: 100%;
+  align-items: center;
 }
 
 
@@ -1527,7 +1526,7 @@ button:active {
 }
 
 .product-info p {
-  padding-top: 25px;
+  padding-top: 26px;
 }
 
 .info p {
@@ -1547,7 +1546,7 @@ button:active {
 
 .service-block p {
   width: 280px;
-  padding-top: 24px;
+  padding-top: 23px;
 }
 
 .garanty-service p{
@@ -1592,7 +1591,7 @@ button:active {
 .delivery-service {
   background-image: url(../img/delivery-car.png);
   background-repeat: no-repeat;
-  background-position: 231px 24px;
+  background-position: 231px 23px;
 }
 
 .garanty-service {
@@ -1621,7 +1620,7 @@ button:active {
   display: inline-block;
   width: 240px;
   box-sizing: border-box;
-  padding: 15px 22px;
+  padding: 14px 22px 15px 21px;
   background-color: #32425c;
   border: 1px solid #4d637b;
   cursor: pointer;
@@ -1652,7 +1651,7 @@ button:active {
 
 .info-contact .map {
   display: block;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 }
 
 
@@ -1699,7 +1698,8 @@ button:active {
 }
 
 .footer-adress {
-  margin-right: 93px;
+  margin-right: 92px;
+  padding-left: 1px;
 }
 
 .footer-adress p {
@@ -1723,7 +1723,7 @@ button:active {
   width: 550px;
   margin: 0;
   padding-left: 0;
-  padding-top: 36px;
+  padding-top: 37px;
 }
 
 .footer-navigation a:hover,
