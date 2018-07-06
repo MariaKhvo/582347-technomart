@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Cuprum";
-  src: 
+  src:
     url("../fonts/web/cuprum.woff2") format("woff2"),
     url("../fonts/web/cuprum.woff") format("woff");
 }
@@ -8,7 +8,7 @@
 @font-face {
   font-family: "Cuprum";
   font-weight: bold;
-  src: 
+  src:
     url("../fonts/web/cuprumbold.woff2") format("woff2"),
     url("../fonts/web/cuprumbold.woff") format("woff");
 }
@@ -16,7 +16,7 @@
 @font-face {
   font-family: "Cuprum";
   font-style: italic;
-  src: 
+  src:
     url("../fonts/web/cuprumitalic.woff2") format("woff2"),
     url("../fonts/web/cuprumitalic.woff") format("woff");
 }
@@ -25,14 +25,14 @@
   font-family: "Cuprum";
   font-style: italic;
   font-weight: bold;
-  src: 
+  src:
     url("../fonts/web/cuprumbolditalic.woff2") format("woff2"),
     url("../fonts/web/cuprumbolditalic.woff") format("woff");
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: 
+  src:
     url("../fonts/web/ptsans.woff2") format("woff2"),
     url("../fonts/web/ptsans.woff") format("woff");
 }
@@ -40,7 +40,7 @@
 @font-face {
   font-family: "PT Sans";
   font-weight: bold;
-  src: 
+  src:
     url("../fonts/web/ptsansbold.woff2") format("woff2"),
     url("../fonts/web/ptsansbold.woff") format("woff");
 }
@@ -65,10 +65,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-ul {
-  list-style: none;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -114,7 +110,7 @@ input[type="radio"].visually-hidden {
 .order-btn {
   position: relative;
   width: 150px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   padding-top: 10px;
   padding-bottom: 15px;
 }
@@ -192,9 +188,9 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   border: none;
   cursor: pointer;
- } 
+ }
 
-.header-top input::before  {
+.header-top input::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -240,7 +236,7 @@ input[type="radio"].visually-hidden {
   background-color: #ba2732;
 }
 
-.bookmark:focus, 
+.bookmark:focus,
 .cart:focus,
 .bookmark:hover,
 .search-field:hover {
@@ -250,7 +246,7 @@ input[type="radio"].visually-hidden {
 .bookmark:hover::before,
 .cart:hover::before,
 .bookmark:focus::before,
-.cart:focus::before, 
+.cart:focus::before,
 .buy:hover::before,
 .buy:focus::before,
 .buy:active::before {
@@ -320,7 +316,6 @@ input[type="radio"].visually-hidden {
 }
 
 .phone {
-  
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -368,7 +363,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   position: relative;
   background-color: #ffffff;
-  display: inline-block;     
+  display: inline-block;
   padding-top: 12px;
   padding-bottom:  12px;
   padding-right: 5px;
@@ -483,15 +478,15 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
  }
 
- .my-orders {
-   position: relative;
-   padding-right: 20px;
-   padding-left: 17px;
+.my-orders {
+  position: relative;
+  padding-right: 20px;
+  padding-left: 17px;
  }
 
- .my-profile {
-   padding-left: 12px;
-   padding-right: 20px;
+.my-profile {
+  padding-left: 12px;
+  padding-right: 20px;
  }
 
 .my-orders::after {
@@ -512,6 +507,7 @@ input[type="radio"].visually-hidden {
   padding-right: 24px;
   background-color: #32425c;
   border-bottom: 4px solid #293449;
+  list-style: none;
 }
 
 .site-navigation a {
@@ -777,7 +773,7 @@ input[type="radio"].visually-hidden {
 
 .slide-item {
   display: none;
-  width: 620px; 
+  width: 620px;
   box-sizing: border-box;
   padding: 25px 110px 24px 23px;
 }
@@ -795,7 +791,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-#slide1:checked ~ .slide-list .slide-item:nth-child(1) {  
+#slide1:checked ~ .slide-list .slide-item:nth-child(1) {
   display: block;
 }
 
@@ -889,7 +885,7 @@ input[type="radio"].visually-hidden {
   background-color: #ca2c37;
 }
 
-button:active {
+.button:active {
   background-color: #ba2732;
 }
 
@@ -906,6 +902,7 @@ button:active {
   padding: 21px 320px 0 0;
   margin-bottom: 18px;
   margin-top: 0;
+  list-style: none;
 }
 
 .delivery-company li {
@@ -1089,6 +1086,7 @@ button:active {
   box-sizing: border-box;
   padding: 10px 39px 10px 9px;
   margin: 0;
+  list-style: none;
 }
 
 .arrow {
@@ -1189,7 +1187,7 @@ button:active {
   font-family: inherit;
   line-height: 18px;
   text-decoration: none;
-  text-transform: uppercase;   
+  text-transform: uppercase;
   display: block;
   position: relative;
   margin-bottom: 7px;
@@ -1200,7 +1198,7 @@ button:active {
 .buy {
   color: #ffffff;
   width: 135px;
-  border-bottom: 3px solid #367315; 
+  border-bottom: 3px solid #367315;
   background-color: #63a63e;
 }
 
@@ -1227,7 +1225,7 @@ button:active {
 
 .buy:hover,
 .buy:focus {
-  background-color: #5fbb2d;; 
+  background-color: #5fbb2d;
 }
 
 .inbookmark:hover,
@@ -1724,6 +1722,7 @@ button:active {
   margin: 0;
   padding-left: 0;
   padding-top: 37px;
+  list-style: none;
 }
 
 .footer-navigation a:hover,
@@ -1772,6 +1771,7 @@ button:active {
   width: 524px;
   padding-left: 0;
   margin: 0;
+  list-style: none;
 }
 
 .footer-bottom {
@@ -1793,7 +1793,6 @@ button:active {
   margin-bottom: 2px;
 }
 
-
 .footer-social a {
   color: #ffffff;
 }
@@ -1806,6 +1805,7 @@ button:active {
   box-sizing: border-box;
   padding: 0;
   margin-right: 117px;
+  list-style: none;
 }
 
 .footer-social li {
@@ -1847,13 +1847,18 @@ button:active {
 }
 
 .modal {
+  display: none;
   position: fixed;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
 .modal-message,
 .modal-cart {
-  display: none;
   width: 620px;
   box-sizing: border-box;
   top: 100px;
@@ -1901,7 +1906,6 @@ button:active {
 .modal-close::after {
   transform: rotate(-45deg);
 }
-  
 
 .form-item {
   margin: 0;
@@ -1959,7 +1963,6 @@ button:active {
 }
 
 .modal-map {
-  display: none;
   height: 445px;
   width: 940px;
   left: 50%;
