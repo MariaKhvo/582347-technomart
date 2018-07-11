@@ -818,6 +818,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 25px 110px 24px 23px;
+  background-color: #725348;
 }
 
 .slide-item:nth-child(1) {
