@@ -2118,21 +2118,20 @@ input[type="radio"].visually-hidden {
   padding: 0px;
   margin-left: -470px;
   margin-top: -170px;
-  z-index: 100;
 }
 
 .modal-map iframe {
   position: relative;
-  z-index: 2;
+  z-index: 10;
   border: none;
 }
 
-.modal-map p {
+.modal-map .map-img {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
+  top: 100%;
+  left: 100%;
   z-index: 1;
+  margin: 0;
 }
 
 .modal-map .modal-close {

@@ -29,6 +29,7 @@ mapClose.addEventListener("click", function (evt) {
   mapPopup.classList.remove("modal-show");
 });
 
+
 var popularList = document.querySelector(".popular-list");
 var cartPopup = document.querySelector(".modal-cart");
 var cartClose = cartPopup.querySelector(".modal-close");
